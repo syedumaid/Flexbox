@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Flexbox Crash Course</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">Flexbox</div>
+        <ul class="nav">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <i class="fa fa-user" aria-hidden="true"></i>  <a href="#">Syed Umaid Ahmed</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="container">
+        <div>
+          <h1>Flexbox Crash Course</h1>
+          <p>
+            This crash course was created by Brad Traversy to help you learn the
+            basics of flexbox. Flexbox is a very important and useful tool in
+            CSS.
+          </p>
+          <div class="box-flex">
+            <p>
+                .container {
+                    &emsp; display: flex;<br>
+                }
+            </p>
+          </div>
+          <p>Basic styling attribute to start working with a flexbox</p>
+        </div>
+        <img src="https://traversymedia.com/images/grid.svg" alt="" />
+      </div>
+      
+    </header>
+
+    <section class="boxes">
+        <h2 class="heading">Basic cmds for creating a good flex-box</h2>
+      <div class="container">
+        <div class="box">
+          <h2>flex-wrap : wrap</h2>
+          <p>Use flex-wrap to wrap the items in the container</p>
+        </div>
+
+        <div class="box">
+          <h2>flex-basis</h2>
+          <p>
+            Basically, same as min-width attribute the major difference is that 
+            it doesn't show a scroll bar when you adjust the window size
+          </p>
+        </div>
+
+        <div class="box">
+          <h2>flex:[-grow][-shrink][-basis]</h2>
+          <p>
+            By default basis is set to 0,given one value; the same value will be taken by grow and shrink
+          </p>
+        </div>
+        <div class="box">
+            <h2>justify-content</h2>
+            <p>
+              Space-between, flex-start, flex-end, space-around are a few set of attributes that can be used to style the content position
+            </p>
+          </div>
+        
+      </div>
+    </section>
+  </body>
+</html>
